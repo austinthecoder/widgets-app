@@ -1,0 +1,13 @@
+%h4 Active
+- if active_widgets.any?
+  = render 'table', :widgets => active_widgets
+- else
+  %p
+    %em There are no active widgets, yet.
+
+%h4 Inactive
+- if inactive_widgets.any?
+  = render 'table', :widgets => inactive_widgets
+- else
+  %p
+    %em There are no inactive widgets, yet.

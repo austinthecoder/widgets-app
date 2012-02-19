@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Widgets
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %h1 Widgets
+    %p
+      = link_to 'All', widgets_path
+      |
+      = link_to 'New', new_widget_path
+    %div= flash.notice
+    = yield
