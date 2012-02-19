@@ -1,6 +1,6 @@
 # Widgets
 
-This is an experiment in separating domain objects from the ORM.
+This is an experiment in the separation of domain objects from the persistence layer (ORM).
 
 ## Inspiration
 
